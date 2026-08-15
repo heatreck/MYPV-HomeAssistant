@@ -1,0 +1,22 @@
+{
+  "title": "my-PV",
+  "config": {
+    "step": {
+      "user": {"title": "my-PV Gerät verbinden", "menu_options": {"ip_known": "IP-Adresse", "ip_unknown": "IP-Subnetz-Scan", "automatic_scan": "Automatischer Scan im lokalen Netzwerk"}},
+      "ip_known": {"data": {"host": "IP-Adresse des my-PV-Geräts"}},
+      "ip_unknown": {"data": {"subnet": "Subnetz eingeben"}},
+      "select_device": {"title": "Gerät auswählen", "description": "Folgende Geräte wurden gefunden:"},
+      "sensors": {"title": "Sensoren auswählen", "description": "Gerät verbunden. Wähle die Sensoren aus:"},
+      "credentials": {"title": "Gerätepasswort", "description": "Neuere my-PV-Firmware schützt Setup-Daten. Das lokale Gerätepasswort eingeben; bei älterer Firmware leer lassen.", "data": {"password": "Passwort"}}
+    },
+    "error": {
+      "could_not_connect": "Keine Verbindung zu einem my-PV-Gerät",
+      "host_already_configured": "Dieses my-PV-Gerät ist bereits eingerichtet",
+      "no_devices_found": "Keine Geräte im Subnetz gefunden",
+      "invalid_subnet": "Ungültiges Subnetz",
+      "invalid_ip": "Ungültige IP-Adresse",
+      "invalid_auth": "Das Passwort wurde abgelehnt oder die geschützten Setup-Daten konnten nicht gelesen werden."
+    },
+    "abort": {"host_exists": "Dieses my-PV-Gerät ist bereits eingerichtet", "invalid_ip_address": "Ungültige IP-Adresse", "no_devices_found": "Keine Geräte im Subnetz gefunden"}
+  }
+}
