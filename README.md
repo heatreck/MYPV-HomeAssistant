@@ -16,6 +16,10 @@ lokale Geräteverbindung akzeptiert.
 
 ## Installation
 
+1. Einmalig auf der lokalen Nutzeroberfläche des SolThors anmelden und ein Passwort vergeben (Standartpasswort ist der Device-Key)
+2. Verschlüsselte Lufzeitdaten im Heimnetz deaktivieren.
+3. SolThor im HomeAssitant inrichten
+
 ### HACS
 
 1. Dieses Repository in HACS als **benutzerdefiniertes Repository** vom Typ
@@ -36,10 +40,3 @@ Die IP-Adresse des Geräts eingeben oder den lokalen Scan benutzen. Für neuere
 Firmware kann ein Passwort erforderlich sein, um Einstellungen abzurufen oder zu
 ändern. Das Passwort wird ausschließlich in der Home-Assistant-Konfiguration
 auf der jeweiligen Instanz gespeichert.
-
-## Sicherheit und Zertifikate
-
-my-PV-Geräte verwenden für `https://<geraete-ip>/` typischerweise ein
-selbstsigniertes Zertifikat. Die Integration deaktiviert deshalb ausschließlich
-bei dieser lokalen HTTPS-Verbindung die Zertifikatsprüfung. Der Zugriff auf die
-Geräte-API erfolgt nie über einen Cloud-Dienst.
